@@ -1,4 +1,4 @@
-16:04:22 **** Incremental Build of configuration Debug for project examen ****
+16:10:20 **** Incremental Build of configuration Debug for project examen ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examen.o" "..\\src\\examen.c" 
 gcc -o examen.exe "src\\examen.o" 

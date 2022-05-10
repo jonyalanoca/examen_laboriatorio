@@ -15,5 +15,6 @@ int main(void) {
 	setbuf(stdout,NULL);
 	printf("Hola xd\n");
 	system("pause");
+	printf("adios");
 	return EXIT_SUCCESS;
 }
