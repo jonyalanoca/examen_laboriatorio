@@ -1,4 +1,15 @@
-16:18:04 **** Rebuild of configuration Debug for project examen01 ****
+17:07:19 **** Rebuild of configuration Debug for project examen02 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examen.o" "..\\src\\examen.c" 
-gcc -o examen01.exe "src\\examen.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function 'main':
+..\src\main.c:62:12: warning: unused variable 'servicios' [-Wunused-variable]
+  eServicio servicios[TAM_HCODE]={
+            ^~~~~~~~~
+..\src\main.c:55:9: warning: unused variable 'colores' [-Wunused-variable]
+  eColor colores[TAM_HCODE]={
+         ^~~~~~~
+..\src\main.c:48:9: warning: unused variable 'marcas' [-Wunused-variable]
+  eMarca marcas[TAM_HCODE]={
+         ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validaciones.o" "..\\src\\validaciones.c" 
+gcc -o examen02.exe "src\\main.o" "src\\validaciones.o" 

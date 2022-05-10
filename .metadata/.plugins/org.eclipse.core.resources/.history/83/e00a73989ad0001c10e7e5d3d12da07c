@@ -1,0 +1,70 @@
+/*
+ ============================================================================
+ Name        : examen.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM_HCODE 5
+typedef struct{
+	int dia;
+	int mes;
+	int año;
+}eFecha;
+typedef struct{
+	int id;
+	char descripcion[20];
+}eMarca;
+typedef struct{
+	int id;
+	char nombreColor[20];
+}eColor;
+typedef struct{
+	int id;
+	int idMarca;
+	int idColor;
+	char caja;
+}eAuto;
+typedef struct{
+	int id;
+	char descripcion[25];
+	float precio;
+}eServicio;
+typedef struct{
+	int id;
+	int patente;
+	int idServicio;
+	eFecha fecha;
+}eTrabajo;
+
+int main(void) {
+	setbuf(stdout,NULL);
+	eMarca marcas[TAM_HCODE]={
+		{1000, "Pugeot"},
+		{1001, "Fiat"},
+		{1002, "Chevrolet"},
+		{1003, "Toyota"},
+		{1004, "Renault"}
+	};
+	eColor colores[TAM_HCODE]={
+			{5000,"Rojo"},
+			{5001,"Azul"},
+			{5002,"Verde"},
+			{5003,"Negro"},
+			{5004,"Blanco"}
+	};
+	eServicio servicios[TAM_HCODE]={
+			{20000,"Labado",1200},
+			{20001,"Pulido",2200},
+			{20002,"Regulado",3200},
+			{20003,"Alineado",4200},
+			{20004,"Inflado",200},
+	};
+
+	return EXIT_SUCCESS;
+}
